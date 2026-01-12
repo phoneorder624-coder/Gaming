@@ -1,0 +1,179 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #121212;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+}
+
+#home {
+    background: linear-gradient(45deg, #121212, #ff0000);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero-banner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-banner p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.subscribe-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #fff;
+    color: #ff0000;
+}
+
+#about, #videos, #gallery, #contact, footer {
+    padding: 3rem 0;
+}
+
+.about-content, .videos-content, .gallery-content, .contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2, .videos-content h2, .gallery-content h2, .contact-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.video-grid, .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.video-card, .gallery-item {
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover, .gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.video-info {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem;
+}
+
+.video-info h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.watch-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.watch-btn:hover {
+    background-color: #fff;
+    color: #ff0000;
+}
+
+.contact-content form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-content input, .contact-content textarea {
+    background-color: #121212;
+    color: #fff;
+    border: 2px solid #ff0000;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.contact-content textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-content button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0
